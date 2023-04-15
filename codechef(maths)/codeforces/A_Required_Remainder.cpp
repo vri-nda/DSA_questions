@@ -8,8 +8,32 @@ int main() {
     while(t--){
         cin>>x>>y>>n;
         // k=7*((n/7))+y;
-        k%x=y;
+        // k%x=y;
         cout<<k<<endl;
     }
 	return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
