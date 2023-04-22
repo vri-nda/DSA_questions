@@ -14,39 +14,37 @@
 
 
 
+#include <iostream>
+using namespace std;
 
-
-// #include <iostream>
-// using namespace std;
-
-// int main() {
-// 	// your code goes here
-// 	int t,n;
-// 	cin>>t;
-// 	while(t--){
-// 	    cin>>n;
-// 	    int half=n/2;
-// 	    string s;
-// 	    cin>>s;
-// 	    int flag;
-// 	    for(int i=0; i<half; i++){
-// 	        if(s[i]==s[i+half]){
-// 	            flag=1;
-// 	        }
-// 	        else{
-// 	            flag=0;
-// 	            break;
-// 	        }
-// 	    }
-// 	    if(flag==1){
-// 	        cout<<"yes"<<endl;
-// 	    }
-// 	    else{
-// 	        cout<<"no"<<endl;
-// 	    }
-// 	}
-// 	return 0;
-// }
+int main() {
+	// your code goes here
+	int t,n;
+	cin>>t;
+	while(t--){
+	    cin>>n;
+	    int half=n/2;
+	    string s;
+	    cin>>s;
+	    int flag;
+	    for(int i=0; i<half; i++){
+	        if(s[i]==s[i+half]){
+	            flag=1;
+	        }
+	        else{
+	            flag=0;
+	            break;
+	        }
+	    }
+	    if(flag==1){
+	        cout<<"yes"<<endl;
+	    }
+	    else{
+	        cout<<"no"<<endl;
+	    }
+	}
+	return 0;
+}
 
 
 // ----------------------------------using substr function ------------------------------------------------------------------------------------
