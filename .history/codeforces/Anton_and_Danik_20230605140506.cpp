@@ -171,66 +171,27 @@
 // 	return 0;
 // }
 
-// #include <iostream>
-// using namespace std;
+#include <iostream>
+using namespace std;
 
-// int main() {
-// 	// your code goes here
-//     string n;
-//     cin>>n;
-//     int flag=0;
-//     for(int i=0; i<n.length(); i++){
-//         if(n[1]%3==0){
-//             flag=1;
-//             break;
-//         }
-//     }
-//     if(flag==1){
-//         cout<<"trendy number"<<endl;
-//     }
-//     else{
-//         cout<<"not trendy"<<endl;
-//     }
+int main() {
+	// your code goes here
+    string n;
+    cin>>n;
+    int flag=0;
+    for(int i=0; i<n.length; i++){
+        if(s[1]%3==0){
+            flag=1;
+            break;
+        }
+    }
+    if(flag==1){
+        cout<<"trendy number"<<endl;
+    }
+    else{
+        cout<<"not trendy"<<endl;
+    }
 
-// 	return 0;
-// }
-
-
-// #include <iostream>
-// using namespace std;
-
-// int main() {
-// 	// your code goes here
-//     int year;
-//     int month;
-//     cin>>year;
-//     cin>>month;
-//     if(year%4==0){
-//         if(month=='1' || month=='3'|| month=='5'|| month=='july' || month=='aug' || month=='oct' || month=='dec'){
-//             cout<<"31"<<endl;
-//         }
-//         else if(month=='feb'){
-//             cout<<"29"<<endl;
-//         }
-//         else if(month=='april' || month=='june'|| month=='sep'|| month=='nov'){
-//             cout<<"30"<<endl;
-//         }
-//     }
-//     else{
-//         if(month=='jan' || month=='march'|| month=='may'|| month=='july' || month=='aug' || month=='oct' || month=='dec'){
-//             cout<<"31"<<endl;
-//         }
-//         else if(month=='feb'){
-//             cout<<"28"<<endl;
-//         }
-//         else if(month=='april' || month=='june'|| month=='sep'|| month=='nov'){
-//             cout<<"30"<<endl;
-//         }
-//     }
-
-// 	return 0;
-// }
-
-
-
+	return 0;
+}
 

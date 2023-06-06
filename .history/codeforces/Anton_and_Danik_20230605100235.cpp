@@ -118,119 +118,29 @@
 // }
 
 
-// #include <iostream>
-// #include <string>
-// #include <algorithm>
-// using namespace std;
+#include <iostream>
+#include <string>
+#include <algorithm>
+using namespace std;
 
-// int main() {
-// 	// your code goes here
-//     int t,n;
-//     cin>>t;
-//     while(t--){
-//         cin>>n;
-//         string s, a="Timur";
-//         cin>>s;
-//         sort(s.begin(),s.end());
-//         sort(a.begin(),a.end());
-//         if(s==a){
-//             cout<<"YES";
-//         }
-//         else{
-//             cout<<"NO";
+int main() {
+	// your code goes here
+    int t,n;
+    cin>>t;
+    while(t--){
+        cin>>n;
+        string s, a="Timur";
+        cin>>s;
+        sort(s.begin(),s.end());
+        sort(a.begin(),a.end());
+        if(s==a){
+            cout<<"YES";
+        }
+        else{
+            cout<<"NO";
             
-//         }
-//         cout<<endl;
-//     }
-// 	return 0;
-// }
-
-
-
-
-
-// #include <iostream>
-// using namespace std;
-
-// int main() {
-// 	// your code goes here
-//     int n;
-//      cin>>n;
-//      int counte=0;
-//      int counto=0;
-//     for(int i=0; i<=n; i++){
-//         if(i%2==0){
-//             counte=counte+i;
-//         }
-//         else{
-//             counto=counto+i;
-//         }
-//     }
-//     cout<<counte<<endl;
-//     cout<<counto<<endl;
-// 	return 0;
-// }
-
-// #include <iostream>
-// using namespace std;
-
-// int main() {
-// 	// your code goes here
-//     string n;
-//     cin>>n;
-//     int flag=0;
-//     for(int i=0; i<n.length(); i++){
-//         if(n[1]%3==0){
-//             flag=1;
-//             break;
-//         }
-//     }
-//     if(flag==1){
-//         cout<<"trendy number"<<endl;
-//     }
-//     else{
-//         cout<<"not trendy"<<endl;
-//     }
-
-// 	return 0;
-// }
-
-
-// #include <iostream>
-// using namespace std;
-
-// int main() {
-// 	// your code goes here
-//     int year;
-//     int month;
-//     cin>>year;
-//     cin>>month;
-//     if(year%4==0){
-//         if(month=='1' || month=='3'|| month=='5'|| month=='july' || month=='aug' || month=='oct' || month=='dec'){
-//             cout<<"31"<<endl;
-//         }
-//         else if(month=='feb'){
-//             cout<<"29"<<endl;
-//         }
-//         else if(month=='april' || month=='june'|| month=='sep'|| month=='nov'){
-//             cout<<"30"<<endl;
-//         }
-//     }
-//     else{
-//         if(month=='jan' || month=='march'|| month=='may'|| month=='july' || month=='aug' || month=='oct' || month=='dec'){
-//             cout<<"31"<<endl;
-//         }
-//         else if(month=='feb'){
-//             cout<<"28"<<endl;
-//         }
-//         else if(month=='april' || month=='june'|| month=='sep'|| month=='nov'){
-//             cout<<"30"<<endl;
-//         }
-//     }
-
-// 	return 0;
-// }
-
-
-
-
+        }
+        cout<<endl;
+    }
+	return 0;
+}

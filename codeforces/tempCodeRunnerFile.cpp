@@ -3,25 +3,19 @@ using namespace std;
 
 int main() {
 	// your code goes here
-    int t,n;
+    int t;
     cin>>t;
     while(t--){
-        cin>>n;
-        int a[n],res=0, count=0;
-        for(int i=0; i<n; i++){
-            cin>>a[i];
-        }
-        for(int i=0; i<n; i++){
-            if(a[i]==1){
-                count=0;
-            }
-            else{
+        string s;
+        string a = "codeforces";
+        cin>>s;
+        int count=0;
+        for(int i=0; i<10; i++){
+            if(s[i]!=a[i]){
                 count++;
-                res= max(count, res);
             }
         }
-        cout<<res<<endl;
-
+        cout<<count<<endl;
     }
 	return 0;
 }
