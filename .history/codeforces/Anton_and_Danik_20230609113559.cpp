@@ -337,12 +337,11 @@ int main() {
     int t;
     cin>>t;
     while(t--){
-		string s1="codeforces";
-		// string s2;
-		char ch; 
-		cin>>ch;
-		// cin>>s2;
-		if(s1.find(ch) != string::npos){
+		string s1="𝚌𝚘𝚍𝚎𝚏𝚘𝚛𝚌𝚎𝚜";
+		string s2;
+		//char ch; cin>>ch;
+		cin>>s2;
+		if(s1.find(s2) != string::npos){
 			cout<<"YES"<<endl;
 		}
 		else{
