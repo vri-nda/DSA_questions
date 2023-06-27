@@ -33,7 +33,28 @@
 // 	return 0;
 // }
 
+// for(int i=1; i<=n; i++){
+// 	    for(j=1; j<n; j=j+i){
+// 	        S.O.P("*");
+// 	}
+// 	}
 
 
 
+#include <iostream>
+#include <string>
+#include <algorithm>
+using namespace std;
 
+int main() {
+	// your code goes here
+    string s,g;
+    cin>>s;
+	g=sort(s.begin(), s.end());
+    if(s==g){
+        cout<<"YES"<<endl;
+    }
+    else{
+        cout<<"NO"<<endl;}
+	return 0;
+}

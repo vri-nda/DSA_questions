@@ -35,5 +35,45 @@
 
 
 
+// #include <iostream>
+// #include <string>
+// #include <algorithm>
+// using namespace std;
 
+// int main() {
+// 	// your code goes here
+//     string s,g;
+//     cin>>s;
+// 	g=sort(s.begin(), s.end());
+//     if(s==g){
+//         cout<<"YES"<<endl;
+//     }
+//     else{
+//         cout<<"NO"<<endl;}
+// 	return 0;
+// }
+
+#include <iostream>
+#include <string>
+#include <algorithm>
+using namespace std;
+
+int main() {
+	// your code goes here
+	string s;
+    cin>>s;
+    int flag=0;
+    for(int i=0; i<s.length(); i++){
+        if(a[i]<=a[i+1]){
+            flag=1;
+        }
+    }
+    if(flag==1){
+        cout<<"YES"<<endl;
+    }
+    else{
+        cout<<"no"<<endl;
+    }
+	return 0;
+}
 
