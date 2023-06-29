@@ -539,33 +539,37 @@
 
 
 
-// #include <iostream>
-// #include <string>
+#include <iostream>
+#include <string>
 
-// int minOperationsToRemove(std::string& series) {
-//     int count = 0;
-//     int i = 0;
-//     while (i < series.length()) {
-//         if (i + 1 < series.length() && series[i] == series[i + 1]) {
-//             count++;
-//             i += 2;
-//         }
-//         else {
-//             i++;
-//         }
-//     }
-//     return count;
-// }
+int minOperationsToRemove(std::string& series) {
+    int count = 0;
+    int i = 0;
+    while (i < series.length()) {
+        if (i + 1 < series.length() && series[i] == series[i + 1]) {
+            count++;
+            i += 2;
+        }
+        else {
+            i++;
+        }
+    }
+    return count;
+}
 
-// int main() {
-//     std::string series;
-//     std::cout << "Enter the series: ";
-//     std::cin >> series;
+int main() {
+    std::string series;
+    std::cout << "Enter the series: ";
+    std::cin >> series;
 
-//     int minOperations = minOperationsToRemove(series);
-//     std::cout<< minOperations+3 << std::endl;
+    int minOperations = minOperationsToRemove(series);
+    std::cout << "Minimum number of operations required: " << minOperations << std::endl;
 
-//     return 0;
-// }
+    return 0;
+}
+
+
+
+
 
 

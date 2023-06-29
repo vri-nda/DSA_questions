@@ -569,3 +569,43 @@
 // }
 
 
+#include <iostream>
+#include <string>
+
+int minOperationsToRemove(const std::string& series) {
+    int count = 0;
+    int i = 0;
+    
+    while (i < series.size()) {
+        if (i + 1 < series.size() && series[i] == series[i + 1]) {
+            count++;
+            int j = i + 2;
+            
+            while (j < series.size() && series[j] == series[i]) {
+                j++;
+            }
+            
+            count++;
+            i = j;
+        } else {
+            i++;
+        }
+    }
+    
+    return count;
+}
+
+int main() {
+    std::string series = "aabbaa";
+    
+    int minOperations = minOperationsToRemove(series);
+    std::cout << "Minimum number of operations required: " << minOperations << std::endl;
+    
+    return 0;
+}
+
+
+
+
+
+

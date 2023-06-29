@@ -498,40 +498,38 @@
 
 
 
-// #include <iostream>
-// #include <string>
-// using namespace std;
+#include <iostream>
+#include <string>
+using namespace std;
 
-// int minOperationsToRemove(string series) {
-//     int operations = 0;
-//     int count = 1;
+int minOperationsToRemove(string series) {
+    int operations = 0;
+    int count = 1;
 
-//     for (int i = 1; i < series.length(); i++) {
-//         if (series[i] == series[i - 1]) {
-//             count++;
-//         } else {
-//             operations += count / 2; 
-//             count = 1;
-//         }
-//     }
+    for (int i = 1; i < series.length(); i++) {
+        if (series[i] == series[i - 1]) {
+            count++;
+        } else {
+            operations += count / 2; // Count the number of operations needed to disconnect adjacent nodes
+            count = 1;
+        }
+    }
 
-//     operations += count / 2;
+    operations += count / 2; // Add the remaining operations for the last group of adjacent nodes
 
-//     return operations;
-// }
+    return operations;
+}
 
-// int main() {
-//     string series;
-//     cout << "input the string: ";
-//     cin >> series;
+int main() {
+    string series;
+    cout << "Enter the series: ";
+    cin >> series;
 
-//     int minOperations = minOperationsToRemove(series);
-//     cout<< minOperations+3 << endl;
+    int minOperations = minOperationsToRemove(series);
+    cout << "Minimum number of operations required: " << minOperations << endl;
 
-//     return 0;
-// }
-
-
+    return 0;
+}
 
 
 
@@ -539,33 +537,11 @@
 
 
 
-// #include <iostream>
-// #include <string>
 
-// int minOperationsToRemove(std::string& series) {
-//     int count = 0;
-//     int i = 0;
-//     while (i < series.length()) {
-//         if (i + 1 < series.length() && series[i] == series[i + 1]) {
-//             count++;
-//             i += 2;
-//         }
-//         else {
-//             i++;
-//         }
-//     }
-//     return count;
-// }
 
-// int main() {
-//     std::string series;
-//     std::cout << "Enter the series: ";
-//     std::cin >> series;
 
-//     int minOperations = minOperationsToRemove(series);
-//     std::cout<< minOperations+3 << std::endl;
 
-//     return 0;
-// }
+
+
 
 
