@@ -24,7 +24,7 @@ int main() {
             count++;
         }
     }
-    if(count == '4' || count == '7'){
+    if(count == 4 || count == 7){
         cout<<"YES"<<endl;
     }
     else{
@@ -32,3 +32,7 @@ int main() {
     }
 	return 0;
 }
+
+
+
+
