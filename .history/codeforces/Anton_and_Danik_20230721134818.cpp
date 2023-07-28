@@ -574,153 +574,42 @@
 
 
 
-// #include <iostream>
-// #include <cmath>
-// using namespace std;
- 
-// int equilibrium(int arr[], int n)
-// {
-//     int i, j;
-//     int leftsum, rightsum;
-    
-//     for (i = 0; i < n; ++i) {
- 
-//         /* get left sum */
-//         leftsum = 0;
-//         for (j = 0; j < i; j++)
-//             leftsum += arr[j];
- 
-//         /* get right sum */
-//         rightsum = 0;
-//         for (j = i + 1; j < n; j++)
-//             rightsum += arr[j];
-       
-//         if (leftsum == rightsum)
-//             return i;
-//     }
- 
-//     return -1;
-// }
- 
-// // Driver code
-// int main()
-// {
-//     int arr[] = { -7, 1, 5, 2, -4, 3, 0 };
-//     int arr_size = sizeof(arr) / sizeof(arr[0]);
- 
-//     // Function call
-//     cout << equilibrium(arr, arr_size);
-//     return 0;
-// }
-
-
-
-// #include <iostream>
-// #include <cmath>
-// using namespace std;
- 
-// int equilibrium(int arr[], int n)
-// {
-//     int sum = 0; 
-//     int leftsum = 0; 
- 
- 
-//     for (int i = 0; i < n; ++i)
-//         sum += arr[i];
- 
-//     for (int i = 0; i < n; ++i) {
-//         sum -= arr[i];
- 
-//         if (leftsum == sum)
-//             return i;
- 
-//         leftsum += arr[i];
-//     }
-   
-//     return -1;
-// }
- 
-// // Driver code
-// int main()
-// {
-//     int arr[] = { -7, 1, 5, 2, -4, 3, 0 };
-//     int arr_size = sizeof(arr) / sizeof(arr[0]);
-    
-//     cout<< equilibrium(arr, arr_size);
-//     return 0;
-// }
-
-// #include <iostream>
-// using namespace std;
- 
-
-// void Leaders(int arr[], int size)
-// {
-//     int max_right =  arr[size-1];
-//     cout << max_right << " ";
-
-//     for (int i = size-2; i >= 0; i--)
-//     {
-//         if (arr[i] > max_right)
-//         {          
-//             max_right = arr[i];
-//             cout << max_right << " ";
-//         }
-//     }   
-// }
-
-// int main()
-// {
-//     int arr[] = {16,8,3,-2,5};
-//     int n = sizeof(arr)/sizeof(arr[0]);
-//     Leaders(arr, n);
-//     return 0;
-// }   
-
-
-
-
 #include <iostream>
 #include <cmath>
 using namespace std;
-
-void Rotate(int arr[], int d, int n)
+ 
+int equilibrium(int arr[], int n)
 {
-    int temp[n];
-    int k = 0;
-   
-    for (int i = d; i < n; i++) {
-        temp[k] = arr[i];
-        k++;
-    }
+    int i, j;
+    int leftsum, rightsum;
     
-    for (int i = 0; i < d; i++) {
-        temp[k] = arr[i];
-        k++;
+    for (i = 0; i < n; ++i) {
+ 
+        /* get left sum */
+        leftsum = 0;
+        for (j = 0; j < i; j++)
+            leftsum += arr[j];
+ 
+        /* get right sum */
+        rightsum = 0;
+        for (j = i + 1; j < n; j++)
+            rightsum += arr[j];
+       
+        if (leftsum == rightsum)
+            return i;
     }
-  
-    for (int i = 0; i < n; i++) {
-        arr[i] = temp[i];
-    }
-}
-
-void PrintTheArray(int arr[], int n)
-{
-    for (int i = 0; i < n; i++) {
-        cout << arr[i] << " ";
-    }
+    return -1;
 }
  
 // Driver code
 int main()
 {
-    int arr[] = { 3,6,8,4,5 };
-    int N = sizeof(arr) / sizeof(arr[0]);
-    int d = 2;
- 
-    // Function calling
-    Rotate(arr, d, N);
-    PrintTheArray(arr, N);
- 
+	int n;
+	cin>>n;
+	int arr[]
+	for(int i=0; i<n; i++){
+		cin>>arr[i];
+	}
+    cout << equilibrium(arr, arr_size);
     return 0;
 }

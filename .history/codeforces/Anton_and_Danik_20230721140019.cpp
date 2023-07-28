@@ -650,77 +650,29 @@
 //     return 0;
 // }
 
-// #include <iostream>
-// using namespace std;
- 
-
-// void Leaders(int arr[], int size)
-// {
-//     int max_right =  arr[size-1];
-//     cout << max_right << " ";
-
-//     for (int i = size-2; i >= 0; i--)
-//     {
-//         if (arr[i] > max_right)
-//         {          
-//             max_right = arr[i];
-//             cout << max_right << " ";
-//         }
-//     }   
-// }
-
-// int main()
-// {
-//     int arr[] = {16,8,3,-2,5};
-//     int n = sizeof(arr)/sizeof(arr[0]);
-//     Leaders(arr, n);
-//     return 0;
-// }   
-
-
-
-
 #include <iostream>
-#include <cmath>
 using namespace std;
-
-void Rotate(int arr[], int d, int n)
-{
-    int temp[n];
-    int k = 0;
-   
-    for (int i = d; i < n; i++) {
-        temp[k] = arr[i];
-        k++;
-    }
-    
-    for (int i = 0; i < d; i++) {
-        temp[k] = arr[i];
-        k++;
-    }
-  
-    for (int i = 0; i < n; i++) {
-        arr[i] = temp[i];
-    }
-}
-
-void PrintTheArray(int arr[], int n)
-{
-    for (int i = 0; i < n; i++) {
-        cout << arr[i] << " ";
-    }
-}
  
-// Driver code
+
+void Leaders(int arr[], int size)
+{
+    int max_right =  arr[size-1];
+    cout << max_right << " ";
+
+    for (int i = size-2; i >= 0; i--)
+    {
+        if (arr[i] > max_right)
+        {          
+            max_right = arr[i];
+            cout << max_right << " ";
+        }
+    }   
+}
+
 int main()
 {
-    int arr[] = { 3,6,8,4,5 };
-    int N = sizeof(arr) / sizeof(arr[0]);
-    int d = 2;
- 
-    // Function calling
-    Rotate(arr, d, N);
-    PrintTheArray(arr, N);
- 
+    int arr[] = {3,2,-1,2,3,2,-1};
+    int n = sizeof(arr)/sizeof(arr[0]);
+    Leaders(arr, n);
     return 0;
-}
+}   
